@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEST WENGDEV</title>
+    <title>Happy 3rd Anniversary!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>Happy 3rd Anniversary, Sayang!</h1>
+    </header>
+
+    <main class="container">
+        <section id="intro" class="carousel-section">
+            <h2>Tiga Tahun Bersama Kamu...</h2>
+
+            <div class="carousel-container">
+                
+                <div class="carousel-slide active-slide">
+                    <img src="https://via.placeholder.com/900x400?text=Foto+Kenangan+1" alt="Kenangan 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://via.placeholder.com/900x400?text=Foto+Kenangan+2" alt="Kenangan 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://via.placeholder.com/900x400?text=Foto+Kenangan+3" alt="Kenangan 3">
+                </div>
+                </div>
+
+            <button class="carousel-btn prev" id="carousel-prev">&#10094;</button>
+            <button class="carousel-btn next" id="carousel-next">&#10095;</button>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery Kenangan Kita</h2>
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Foto+Kalian+1" alt="Kenangan 1">
+                    <p>Caption foto 1 (Misal: "Selfie pertama kita")</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Foto+Kalian+2" alt="Kenangan 2">
+                    <p>Caption foto 2 (Misal: "Liburan ke... ")</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Foto+Kalian+3" alt="Kenangan 3">
+                    <p>Caption foto 3</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Foto+Kalian+4" alt="Kenangan 4">
+                    <p>Caption foto 4</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="game">
+            <h2>Seberapa Tahu Kamu Tentang Kita?</h2>
+            <form id="quiz-form">
+
+                <div class="quiz-question">
+                    <p>1. Di mana kita pertama kali kencan?</p>
+                    <label><input type="radio" name="q1" value="a"> Kafe A</label>
+                    <label><input type="radio" name="q1" value="b"> Bioskop B</label>
+                    <label><input type="radio" name="q1" value="c"> Taman C</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. Apa makanan favoritku?</p>
+                    <label><input type="radio" name="q2" value="a"> Nasi Goreng</label>
+                    <label><input type="radio" name="q2" value="b"> Seblak</label>
+                    <label><input type="radio" name="q2" value="c"> Steak</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p>3. Tanggal berapa tepatnya kita jadian?</p>
+                    <label><input type="radio" name="q3" value="a"> 20 Oktober</label>
+                    <label><input type="radio" name="q3" value="b"> 15 November</label>
+                    <label><input type="radio" name="q3" value="c"> 25 Desember</label>
+                </div>
+
+                <button type="submit" id="submit-quiz">Lihat Hasil!</button>
+            </form>
+            <div id="quiz-result"></div>
+        </section>
+
+        <a aria-label="Chat on WhatsApp"
+            href="https://wa.me/6281933121831?text=Halo%20sayangku%20cintaku%20Happy%20Anniversay"> <img
+                alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.svg" />
+            <a />
+
+            <section id="game-memory">
+                <h2>Game Kenangan Kita</h2>
+                <p class="game-intro">Coba cocokkin ikon-ikon di bawah ini!</p>
+
+                <div class="memory-game">
+                </div>
+
+                <p id="memory-status">Selamat bermain!</p>
+                <button id="restart-memory">Mulai Ulang Game</button>
+            </section>
+
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for My Only One</p>
+        <p>2025 </p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
