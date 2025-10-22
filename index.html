@@ -5,38 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy 3rd Anniversary!</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Happy 3rd Anniversary, Sayang!</h1>
+        <h1>Happy 3rd Anniversary, Sayangku my Bubu!</h1>
     </header>
 
     <main class="container">
-        <section id="intro" class="carousel-section">
-            <h2>Tiga Tahun Bersama Kamu...</h2>
+        <section id="intro">
+            <h2>Tiga Tahun Bersama Bubu...</h2>
 
-            <div class="carousel-container">
-                
-                <div class="carousel-slide active-slide">
-                    <img src="https://via.placeholder.com/900x400?text=Foto+Kenangan+1" alt="Kenangan 1">
-                </div>
-                <div class="carousel-slide">
-                    <img src="https://via.placeholder.com/900x400?text=Foto+Kenangan+2" alt="Kenangan 2">
-                </div>
-                <div class="carousel-slide">
-                    <img src="https://via.placeholder.com/900x400?text=Foto+Kenangan+3" alt="Kenangan 3">
-                </div>
+            <div id="headerCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="5000">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
 
-            <button class="carousel-btn prev" id="carousel-prev">&#10094;</button>
-            <button class="carousel-btn next" id="carousel-next">&#10095;</button>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://via.placeholder.com/900x400?text=Foto+Kenangan+1" class="d-block w-100"
+                            alt="Kenangan 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/900x400?text=Foto+Kenangan+2" class="d-block w-100"
+                            alt="Kenangan 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://via.placeholder.com/900x400?text=Foto+Kenangan+3" class="d-block w-100"
+                            alt="Kenangan 3">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
 
         <section id="gallery">
-            <h2>Gallery Kenangan Kita</h2>
+            <h2>Gallery Kenangan Dudu Bubu</h2>
             <div class="gallery-grid">
 
                 <div class="gallery-item">
@@ -55,7 +82,20 @@
                     <img src="https://via.placeholder.com/300x300?text=Foto+Kalian+4" alt="Kenangan 4">
                     <p>Caption foto 4</p>
                 </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Foto+Kalian+4" alt="Kenangan 5">
+                    <p>Caption foto 5</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/300x300?text=Foto+Kalian+4" alt="Kenangan 6">
+                    <p>Caption foto 6</p>
+                </div>
             </div>
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/1dGr1c8CrMLDpV6mPbImSI?utm_source=generator" width="100%"
+                height="152" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
         </section>
 
         <section id="game">
@@ -63,14 +103,14 @@
             <form id="quiz-form">
 
                 <div class="quiz-question">
-                    <p>1. Di mana kita pertama kali kencan?</p>
-                    <label><input type="radio" name="q1" value="a"> Kafe A</label>
-                    <label><input type="radio" name="q1" value="b"> Bioskop B</label>
-                    <label><input type="radio" name="q1" value="c"> Taman C</label>
+                    <p>1. Di mana kita jadian?</p>
+                    <label><input type="radio" name="q1" value="a"> Lorong Bangki Stembayo</label>
+                    <label><input type="radio" name="q1" value="b"> Circa 90 Cafe</label>
+                    <label><input type="radio" name="q1" value="c"> Burjo Elephant</label>
                 </div>
 
                 <div class="quiz-question">
-                    <p>2. Apa makanan favoritku?</p>
+                    <p>2. Apa makanan favorit pudu?</p>
                     <label><input type="radio" name="q2" value="a"> Nasi Goreng</label>
                     <label><input type="radio" name="q2" value="b"> Seblak</label>
                     <label><input type="radio" name="q2" value="c"> Steak</label>
@@ -78,9 +118,16 @@
 
                 <div class="quiz-question">
                     <p>3. Tanggal berapa tepatnya kita jadian?</p>
-                    <label><input type="radio" name="q3" value="a"> 20 Oktober</label>
-                    <label><input type="radio" name="q3" value="b"> 15 November</label>
-                    <label><input type="radio" name="q3" value="c"> 25 Desember</label>
+                    <label><input type="radio" name="q3" value="a"> 23 Oktober</label>
+                    <label><input type="radio" name="q3" value="b"> 23 November</label>
+                    <label><input type="radio" name="q3" value="c"> 21 Februari</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p>4. Siapa nama karakter yang mewakili kita??</p>
+                    <label><input type="radio" name="q4" value="a"> Bubu & Dudu</label>
+                    <label><input type="radio" name="q4" value="b"> Milk & Mocha</label>
+                    <label><input type="radio" name="q4" value="c"> Yuta & Bella</label>
                 </div>
 
                 <button type="submit" id="submit-quiz">Lihat Hasil!</button>
@@ -88,28 +135,39 @@
             <div id="quiz-result"></div>
         </section>
 
-        <a aria-label="Chat on WhatsApp"
-            href="https://wa.me/6281933121831?text=Halo%20sayangku%20cintaku%20Happy%20Anniversay"> <img
-                alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.svg" />
-            <a />
+        <section id="game-memory">
+            <h2>Game Kenangan Dudu Bubu</h2>
+            <p class="game-intro">Coba cocokkin ikon-ikon di bawah ini yaa!</p>
 
-            <section id="game-memory">
-                <h2>Game Kenangan Kita</h2>
-                <p class="game-intro">Coba cocokkin ikon-ikon di bawah ini!</p>
+            <div class="memory-game">
+            </div>
 
-                <div class="memory-game">
-                </div>
+            <p id="memory-status">Selamat bermain bubu!</p>
+            <button id="restart-memory">Mulai Ulang Gamena</button>
+        </section>
 
-                <p id="memory-status">Selamat bermain!</p>
-                <button id="restart-memory">Mulai Ulang Game</button>
-            </section>
+        <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/4eAhp402meOIEhybaebmyJ?utm_source=generator" width="100%"
+            height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        <div class="whatsapp-bottom-container">
+            <a aria-label="Chat on WhatsApp"
+                href="https://wa.me/6281933121831?text=Halo%20sayangku%20cintaku%20Happy%20Anniversay"> <img
+                    alt="Chat on WhatsApp" src="assets/WhatsAppButtonGreenSmall.png" />
+            </a>
+        </div>
+
 
     </main>
 
     <footer>
-        <p>Made with ❤️ for My Only One</p>
-        <p>2025 </p>
+        <p>Made with ❤️ for My Only One (2025)</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
 </body>

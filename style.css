@@ -1,7 +1,6 @@
-/* Import font baru: Poppins (Judul) dan Nunito (Teks) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Nunito:wght@400;700&display=swap');
 
-/* Reset dasar */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -348,4 +347,58 @@ footer {
 
 .carousel-btn.next {
     right: 15px;
+}
+
+/* =========== TWEAK UNTUK BOOTSTRAP CAROUSEL =========== */
+
+/* Pindahkan padding dari section ke container-nya */
+section {
+    padding: 30px; 
+}
+
+/* Khusus section intro, kita tidak perlu padding atas/bawah */
+#intro {
+    padding-top: 0;
+    padding-bottom: 0;
+    /* Hapus shadow dari section karena akan dipindah ke carousel */
+    box-shadow: none; 
+    background: none; /* Hapus background section */
+}
+
+/* Beri jarak antara judul h2 dan carousel */
+#intro h2 {
+    /* Samakan padding section agar h2 tetap rapi */
+    padding-top: 30px; 
+}
+
+/* Ini untuk membuat carousel-nya tumpul dan punya shadow */
+#headerCarousel {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Tweak untuk gambar di dalam carousel agar rasionya pas */
+.carousel-item img {
+    height: 400px; /* Samakan tingginya */
+    object-fit: cover; /* Biar tidak gepeng */
+}
+
+.whatsapp-bottom-container {
+    text-align: center; 
+    
+    /* Kasih jarak sedikit biar gak nempel */
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* (Opsional) Biar lebih interaktif, kasih efek hover */
+.whatsapp-bottom-container a img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+.whatsapp-bottom-container a:hover img {
+    transform: scale(1.05); /* Sedikit membesar */
+    opacity: 0.85; /* Sedikit pudar */
 }
